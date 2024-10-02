@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f5f5f5;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    background: #91ee57;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    font-size: 2rem;
+    color: white;
+}
+main{
+    min-height: 80vh;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+main form{
+    display: flex;
+    justify-content: center;
+}
+form input[type='text']{
+    flex-grow: 1;
+}
+form input[type='text'], button[type='submit']{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+}
+button[type='submit']{
+    background: #91ee57;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button[type='submit']:hover{
+    background: #aafd76;
+}
+button[type='submit']:active{
+    scale: 0.9;
+}
+.result{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.result p[class="partOfSpeech"]{
+    font-style: italic;
+    color: #808080;
+    margin-top: 2px;
+}
+.result p{
+    margin-top: 10px;
+}
+.result li{
+    padding: 5px;
+    margin-left: 20px;
+}
+.result div{
+    margin-top: 20px;
+}
+.result div a{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: #91ee57;
+    transition: all 0.3s ease-in-out;
+}
+.result div a:hover{
+    background: #aafd76;
+}
+.result div a:active{
+    scale: 0.9;
+}
+.result audio{
+    margin-top: 20px;
+    width: 250px;
+    
+}
+@media screen and (max-width: 400px){
+    nav h1{
+        font-size: 1.5rem;
+    }
+    .logo{
+        height: 40px;
+    }
+    main form{
+        flex-direction: column;
+    }
+    form  button[type='submit']{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+}
